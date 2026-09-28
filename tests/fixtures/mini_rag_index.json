@@ -1,0 +1,40 @@
+{
+  "version": "v1",
+  "algorithm": "bm25",
+  "paragraph_count": 3,
+  "paragraphs": [
+    {
+      "id": "22-1",
+      "chapter_index": 22,
+      "paragraph_index": 1,
+      "part_index": 6,
+      "part_title_cn": "西方世界的崛起",
+      "era": "post-1500",
+      "title_cn": "西欧的扩张：伊比利亚阶段（1500—1600年）",
+      "text": "美洲的发现和经由好望角抵达东印度的航线的开辟，是人类历史上最伟大、最重要的两件事。",
+      "segment_start_time_raw": "1500—1600年"
+    },
+    {
+      "id": "22-2",
+      "chapter_index": 22,
+      "paragraph_index": 2,
+      "part_index": 6,
+      "part_title_cn": "西方世界的崛起",
+      "era": "post-1500",
+      "title_cn": "西欧的扩张：伊比利亚阶段（1500—1600年）",
+      "text": "——亚当·斯密",
+      "segment_start_time_raw": "1500—1600年"
+    },
+    {
+      "id": "7-1",
+      "chapter_index": 7,
+      "paragraph_index": 1,
+      "part_index": 2,
+      "part_title_cn": "欧亚大陆的古典文明（公元500年之前）",
+      "era": "pre-1500",
+      "title_cn": "中国文明",
+      "text": "中国文明在公元前2000年左右开始形成，黄河流域是早期文明的重要发源地。",
+      "segment_start_time_raw": null
+    }
+  ]
+}

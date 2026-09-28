@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.langchain.db
+
+# Secrets
+.env
+
+# Copyrighted book content — NEVER commit user files
+sources/private/*
+!sources/private/README.md
+!sources/private/.gitkeep
+sources/**/*.epub
+sources/**/*.pdf
+sources/**/*.mobi
+sources/**/*.azw3
+
+# Generated book text
+adapted_book.json
+data.json
+
+# Pipeline artifacts (may contain excerpts)
+data/store/
+data/unified_knowledge.json
+data/segment_year_index.json
+data/chapter_year_index.json
+data/location_geocoding.json
+data/rag/
+
+# Frontend runtime data
+visualization/public/data/*.json
+!visualization/public/data/.gitkeep
+
+# Node
+node_modules/
+dist/
+
+# IDE / local agent tooling
+.DS_Store
+.idea/
+.cursor/

@@ -1,0 +1,119 @@
+@import "tailwindcss";
+
+:root {
+  --color-primary: #8b4513;
+  --color-secondary: #d4a574;
+  --color-accent: #c41e3a;
+  --color-background: #faf8f5;
+  --color-text: #2c1810;
+  --color-border: #d4c5b5;
+}
+
+body {
+  font-family: 'Noto Serif SC', 'Source Han Serif SC', serif;
+  background-color: var(--color-background);
+  color: var(--color-text);
+  margin: 0;
+}
+
+/* Animation for toast notifications */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -10px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.3s ease-out;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-border);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-secondary);
+}
+
+/* Dual-thumb chapter range slider */
+.chapter-range-thumb {
+  position: absolute;
+  width: 100%;
+  height: 0;
+  margin: 0;
+  padding: 0;
+  pointer-events: none;
+  appearance: none;
+  background: transparent;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.chapter-range-thumb::-webkit-slider-runnable-track {
+  height: 0;
+  background: transparent;
+  border: none;
+}
+
+.chapter-range-thumb::-moz-range-track {
+  height: 0;
+  background: transparent;
+  border: none;
+}
+
+.chapter-range-thumb::-webkit-slider-thumb {
+  pointer-events: auto;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  margin-top: -7px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  background: var(--color-primary);
+  box-shadow: 0 1px 4px rgba(44, 24, 16, 0.25);
+  cursor: grab;
+}
+
+.chapter-range-thumb:active::-webkit-slider-thumb {
+  cursor: grabbing;
+  transform: scale(1.08);
+}
+
+.chapter-range-thumb::-moz-range-thumb {
+  pointer-events: auto;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  background: var(--color-primary);
+  box-shadow: 0 1px 4px rgba(44, 24, 16, 0.25);
+  cursor: grab;
+}
+
+.chapter-range-thumb:focus {
+  outline: none;
+}
+
+.chapter-range-thumb:focus-visible::-webkit-slider-thumb {
+  box-shadow: 0 0 0 3px rgba(139, 69, 19, 0.25);
+}
+
+.chapter-range-thumb:focus-visible::-moz-range-thumb {
+  box-shadow: 0 0 0 3px rgba(139, 69, 19, 0.25);
+}

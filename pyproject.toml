@@ -1,0 +1,22 @@
+[project]
+name = "global-history"
+version = "0.1.0"
+description = "Stavrianos Global History knowledge graph and visualization"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "beautifulsoup4>=4.12",
+    "ebooklib>=0.18",
+    "fastapi>=0.115",
+    "fastembed>=0.7",
+    "langchain-core>=1.2",
+    "langchain-deepseek>=1.0",
+    "numpy>=2.0",
+    "pydantic>=2.10",
+    "pytest>=9.0",
+    "tqdm>=4.66",
+    "uvicorn>=0.34",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
